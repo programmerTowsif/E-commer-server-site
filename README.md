@@ -14,4 +14,6 @@
 10. How to secure API -> xss-clean, express-rate-limit
 11. Enviroment variable & .gitigonre
 12. MVC architecture
-
+13. connect to MongoDb database
+14. Schema & Model for user
+15. create seed route for testing

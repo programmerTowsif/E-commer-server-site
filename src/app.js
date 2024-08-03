@@ -3,7 +3,8 @@ const morgan = require("morgan");
 const bodyParser = require("body-parser");
 const createError = require("http-errors");
 const xssClean = require('xss-clean') 
-const reateLimit = require('express-rate-limit')
+const reateLimit = require('express-rate-limit');
+const userRouter = require("./routers/userRouter");
 
 const app = express();
 
@@ -18,6 +19,8 @@ app.use(xssClean())
 app.use(morgan("dev"));
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({ extended: true }));
+
+app.use('/api/user',userRouter)
 
 app.get("/test",rateLimiter, (req, res) => {
   res.status(200).send({

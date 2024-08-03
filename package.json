@@ -11,11 +11,13 @@
   "author": "",
   "license": "ISC",
   "dependencies": {
+    "bcryptjs": "^2.4.3",
     "body-parser": "^1.20.2",
     "dotenv": "^16.4.5",
     "express": "^4.19.2",
     "express-rate-limit": "^7.4.0",
     "http-errors": "^2.0.0",
+    "mongoose": "^8.5.2",
     "xss-clean": "^0.1.4"
   },
   "devDependencies": {
